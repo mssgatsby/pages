@@ -1,0 +1,568 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    color: inherit;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+
+.container{
+    margin: auto 5%;
+    max-width: 1280px;
+    align-content: center;
+}
+.nav{
+    background-color: #1b3764;
+    color: #fff;
+    position: relative;
+}
+.nav .container{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between
+}
+/* .nav .mobnav{
+    display: flex;
+    gap: 260px;
+    align-items: center;
+} */
+.nav .social1{
+    display: none;
+    gap: 10px;
+}
+.nav .social1 i{
+    background-color: white;
+    color: #1b3764;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav .mobnav{
+    width: 30%;
+    display: flex;
+    transition: 0.5s;
+}
+.nav .mobnav > ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+.nav .social{
+    display: flex;
+    gap: 10px;
+}
+.nav .social i{
+    background-color: white;
+    color: #1b3764;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav .order{
+    width: 13%;
+    padding: 1% 0;
+    background-color: orange;
+}
+.nav label{
+    display: none;
+}
+.nav input{
+    display: none;
+}
+.nav input:checked + .mobnav{
+    /* background-color: antiquewhite; */
+    left: 0;
+}
+
+.showcase{
+    background-color: #1b3764;
+    color: #fff;
+    padding: 100px 0;
+}
+.showcase .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.showcase .text{
+    display: flex;
+    gap: 45px;
+    flex-direction: column;
+    width: 40%;
+}
+.showcase .top{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 25px;
+}
+.showcase .button{
+    display: flex;
+    gap: 50px;
+}
+.showcase .button .order{
+    width: 40%;
+    padding: 3% 0;
+    background-color: orange;
+    border: none;
+}
+.showcase .button #read{
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 0 5px;
+}
+.showcase ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    line-height: 40px;
+}
+.showcase img{
+    width: 45%;
+}
+.sale{
+    text-align: center;
+    padding: 125px 0 ;
+}
+.sale .cards{
+    display: flex;
+    justify-content: space-between;
+}
+.sale .card{
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+.sale .card .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.sale .card button{
+    width: 50%;
+    height: 40px;
+    border: 1px solid orange;
+    background-color: transparent;
+}
+.sale .card img{
+    width: 45%;
+}
+.sale .card ul{
+    margin-left: 15px;
+}
+
+.author{
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0;
+}
+.author > img{
+    box-shadow: 50px 50px #fff,
+    50px 50px 0 8px orange;
+    width: 45%;
+}
+.author .text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.author .grades{
+    display: flex;
+    justify-content: space-between;
+}
+.author .grade{
+    padding: 0 35px ;
+}
+.author .grades > :nth-child(2){
+    border-right: 1px solid orange;
+    border-left: 1px solid orange;
+}
+.author .qr{
+    display: flex;
+    background-color: #1b3764;
+    padding: 15px;
+    color: #fff;
+}
+.author .qr .text{
+    padding: 0 20px;
+    margin: 0;
+}
+
+.trust{
+    padding: 126px 0;
+    text-align: center;
+}
+.trust .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.trust .card{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.copy{
+    background-color: #1b3764;
+    color: #fff;
+}
+.copy .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+}
+.copy .container .text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.copy button{
+    width: 30%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: 1px solid orange;
+    color: #fff;
+}
+.copy img{
+    width: 45%;
+}
+.learn{
+    padding: 136px 0;
+    text-align: center;
+}
+.learn .bot img{
+    box-shadow: 50px 50px #fff,
+    50px 50px 0 8px orange;
+    width: 35%;
+}
+.learn .bot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.learn .bot .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.learn .card{
+    /* width: 45%; */
+    height: 200px;
+    background-color: rgba(244, 248, 255, 1);
+}
+
+.vision{
+    background-color: rgba(244, 248, 255, 1);
+}
+.vision .container{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.vision .container .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.vision .card{
+    background-color: #fff;
+    padding: 40px;
+    /* width: 45%; */
+}
+.vision .container .card .page{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.vision .container button{
+    width: 25%;
+    padding: 24px 0;
+    background-color: orange;
+}
+
+.comments{
+    display: flex;
+    padding: 130px 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.comments .text{
+    width: 35%;
+}
+.comments .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.comments .card{
+    width: 45%;
+    background-color: #1b3764;
+    color: #fff;
+}
+.comments .card .rasm{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.article{
+    background-color: rgba(244, 248, 255, 1);
+}
+.article .container{
+    padding: 120px 0;
+    text-align: center;
+}
+.article .cards{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    text-align: start;
+    flex-wrap: wrap;
+}
+.article .card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+.update{
+    background-color: rgba(255, 202, 66, 1);
+}
+.update .container{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.update .search{
+    width: 80%;
+    text-align: center;
+}
+.update input{
+    border: none;
+    height: 50px;
+    width: 65%;
+}
+.update button{
+    width: 34%;
+    height: 50px;
+    color: #fff;
+    background-color: #1b3764;
+}
+
+.footer{
+    background-color: #1b3764;
+    text-align: center;
+    color: #fff;
+}
+.footer .container .cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 100px 0;
+    text-align: left;
+
+}
+
+.footer .card, ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer img{
+    width: 200px
+}
+.footer i{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:750px){
+    .nav .mobnav{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        background-color: #1b3764;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        height: 70vh;
+    }
+    .nav label{
+        display: block;
+    }
+    .nav .mobnav ul{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        height: 60%;
+        align-items: center;
+    
+    }
+    .nav .social1{
+        display: flex;
+        height: 40%;
+        align-items: center;
+    }
+    .nav .social{
+        display: none;
+    }
+    .showcase .text .top{
+        font-size: 15px;
+    }
+    .sale{
+        padding: 50px 0;
+    }
+    .sale .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sale .card{
+        width: 100%;
+    }
+    .author {
+        flex-direction: column;
+        padding: 0;
+    }
+    .author .text{
+        width: 100%;
+        margin-top: 70px;
+    }
+    .trust .card{
+        width: 45%;
+    }
+    .copy .container .text{
+        width: 47%;
+    }
+    .copy .container img{
+        width: 47%;
+    }
+    .learn img{
+        display: none;
+    }
+    .vision .container .cards{
+        grid-template-columns: 1fr;
+    }
+    .comments{
+        flex-direction: column;
+    }
+    .comments .text{
+        width: 100%;
+    }
+    .article .card{
+        width: 44%;
+    }
+    .update .search{
+        width: 100%;
+    }
+    .footer .container .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+
+@media(max-width:480px){
+    .container{
+        margin: 0;
+    }
+    .nav .mobnav{
+        width: 100%;
+    }
+    .showcase .container{
+        flex-direction: column;
+    }
+    .showcase .text{
+        width: 95%;
+    }
+    .showcase .container img{
+        width: 90%;
+    }
+    .showcase .button, ul{
+        justify-content: center;
+    }
+    .trust{
+        padding: 50px 0;
+    }
+    .copy img{
+        display: none;
+    }
+    .copy .container .text{
+        width: 100%;
+    }
+    .comments .cards{
+        flex-direction: column;
+    }
+    .comments .card{
+        width: 100%;
+    }
+    .article .card{
+        width: 100%;
+    }
+    .footer .container .cards{
+        grid-template-columns: repet(1, 1fr);
+    }
+}
